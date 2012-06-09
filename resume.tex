@@ -1,0 +1,110 @@
+\documentclass[12pt,a4paper,roman]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default) and 'classic' 
+%\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\rmdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\usepackage{textcomp}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{3.075cm}           % if you want to change the width of the column with the dates
+
+% personal data
+\firstname{George}
+\familyname{Shakhnazaryan}
+\title{Software Engineer}               % optional, remove the line if not wanted
+%\address{Lake Zurich, IL }{60047}    % optional, remove the line if not wanted
+%\mobile{+1~(847)~555~5555}                     % optional, remove the line if not wanted
+%\phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
+%\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
+\email{george@shakhnazaryan.com}                          % optional, remove the line if not wanted
+\homepage{www.shakhnazaryan.com}                    % optional, remove the line if not wanted
+%\extrainfo{additional information}            % optional, remove the line if not wanted
+%\photo[64pt][0.4pt]{picture}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{Objective: A technically challenging position in a team based environment that will help me improve myself and the world.}                 % optional, remove the line if not wanted
+	
+\begin{document}
+\maketitle
+
+\section{Skills}
+\cvitem{Languages (Core)}{Java, JavaScript, C\#}
+\cvitem{Languages (Extra)}{Scala, Ruby, Lua, C, C++, Objective-C, PowerShell}
+\cvitem{Frameworks}{Stripes, jQuery, Thrift, Guice, \mbox{Hibernate}, .NET, log4j, ASP.NET, Spring.NET}
+\cvitem{TDD Tools}{JUnit, Fitnesse, RSpec, Selenium, Jasmine, js-test-driver}{
+\cvitem{Quality Tools}{Sonar, FxCop, Jenkins, \mbox{CruiseControl.NET}}
+\cvitem{Databases}{Oracle 11g, SQL Server 2008, HSQLDB 2.0}
+\cvitem{Operating Systems}{Linux, Windows, Mac OS X}
+\cvitem{Application Servers}{JBoss, Tomcat, IIS}
+\cvitem{IDEs}{IntelliJ, Visual Studio, Eclipse}
+\cvitem{Profilers}{YourKit, \mbox{EQATEC Profiler}}
+\cvitem{Source Control}{SVN, Git, Perforce}
+\cvitem{Other}{JRebel, Ant, Ivy, make, \mbox{MyGeneration}}
+
+\section{Experience}
+\cventry{2010--Present}{Software Developer}{Backstop Solutions Group}{Chicago, IL}{}{Software as a service platform for hedge funds and fund of funds
+\begin{itemize}
+  \item Maintained and improved main Accounting/CRM Java web platform following a Scrum/Kanban methodology.
+  \item Worked with project customers to write executable acceptance tests that caught numerous bugs during project development and subsequent maintenance.
+  \item Deployed and monitored software in production.
+  \item Created scalable services to sync email from Exchange 2007/2010 and IMAP servers.
+%  \item Developed Portfolio Planning module with comprehensive tests and relatively few bugs.
+  \item Integrated Fitnesse with build process. Promoted writing integration tests and assisted team members in test writing.
+  \item Setup and maintained local Sonar installation for static analysis of codebase.
+  \item Integrated js-test-driver with build process in order to add JavaScript testing to platform.
+\end{itemize}
+}
+\cventry{2008-2010}{Software Developer}{AgileTek LLC}{Des Plaines, IL}{}{Custom software development firm specializing in high risk projects
+\begin{itemize}
+  \item Planned and estimated tasks, following an Agile methodology
+  \item Created a .NET 3.5 WinForms application for an automated medical diagnostics device.
+    \begin{itemize}
+      \item Created a printing framework utilizing .NET printing to print reports. Designed and created reports using framework.
+      \item Architected migration process of legacy data to new schema.
+    \end{itemize}
+  \item Created an online payment portal using ASP.NET Web Forms for auto insurance agencies, which thousands of customers use to pay for their auto insurance.
+    \begin{itemize}
+      \item Defined the client's objective and brainstormed ways of meeting the objective.
+      \item Designed MS SQL Server database schema.
+     \item Created FTP application to download payment records from a payment processor.
+      \item Integrated multiple 3rd party software packages to ease client workflow.
+      \item Setup SVN server and assisted team members in accessing source control.
+    \end{itemize}
+\end{itemize}}
+
+\section{Education}
+\cventry{2011}{Introduction to Artificial Intelligence}{ai-class.com}{}{}{An online course taught by Stanford professors Peter Norvig and Sebastian Thrun}
+\cventry{2006--2008}{Bachelor of Science}{University of Illinois at Chicago}{}{\textit{3.66/4.00}}{Major: Computer Science}
+
+\section{Activities}
+\cventry{2007}{Member}{UIC ACM International Collegiate Programming Contest Team}{}{}{Ranked 18 of 112 in Mid-Central USA Region}
+\cventry{2004-2006}{President}{Web Design Club/Team}{}{}{
+\begin{itemize}
+  \item Created websites for school activities.
+  \item Competed in 36th Annual Graphic Arts Institute of Technology Printing Contest
+  \begin{itemize}
+    \item Best in Show
+    \item First Place Group, Level II, Web Design
+  \end{itemize}
+\end{itemize}
+}
+\cventry{2002-2004}{Member}{Web Design Club/Team}{}{}{}{}
+\cventry{2002-2006}{Member}{Mathematics Team}{}{}{
+\begin{itemize}
+  \item Consistently High Scorer
+  \item Participated in State Contest
+  \item Qualified for the American Invitational Mathematics Examination
+  \item Participated in USAMTS
+\end{itemize}}
+
+%\section{Languages}
+%\cvitem{English}{Fluent}
+%\cvitem{Russian}{Spoken}
+
+\end{document}
