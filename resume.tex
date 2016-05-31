@@ -25,7 +25,7 @@
 %\phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
 %\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
 \email{george@shakhnazaryan.com}                          % optional, remove the line if not wanted
-\homepage{https://github.com/gshakhn}                    % optional, remove the line if not wanted
+\homepage{http://www.gshakhn.com}                    % optional, remove the line if not wanted
 %\extrainfo{additional information}            % optional, remove the line if not wanted
 %\photo[64pt][0.4pt]{picture}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Objective: A technically challenging position in a team based environment.}                 % optional, remove the line if not wanted
@@ -34,14 +34,14 @@
 \maketitle
 
 \section{Skills}
-\cvitem{Core Languages}{Java, Scala, JavaScript}
-\cvitem{Extra Languages}{Ruby, C\#, Lua, C}
-\cvitem{Frameworks}{Stripes, Jersey, Scalatra, jQuery, Ember.js, Meteor, Guice, \mbox{Hibernate}, Slick}
-\cvitem{TDD Tools}{JUnit, ScalaTest, ScalaCheck, Fitnesse, RSpec, Selenium WebDriver, \mbox{page-object}, Jasmine, \mbox{js-test-driver}}{
-\cvitem{Quality Tools}{Sonar, FxCop, Scalastyle, scct, Jenkins, \mbox{CruiseControl.NET}}
-\cvitem{Databases}{Oracle 11g, SQL Server 2008, HSQLDB 2.0, H2}
-\cvitem{Source Control}{SVN, Git, Perforce}
-\cvitem{Other}{JRebel, RabbitMQ, Ant, Ivy, sbt, maven, make}
+\cvitem{Core Languages}{Java, Scala}
+\cvitem{Extra Languages}{JavaScript, Ruby, C\#}
+\cvitem{Frameworks}{Stripes, Jersey, Scalatra, jQuery, Guice, \mbox{Hibernate}, Slick}
+\cvitem{TDD Tools}{JUnit, ScalaTest, ScalaCheck, FitNesse, RSpec, Selenium WebDriver, \mbox{page-object}, Jasmine}
+\cvitem{Quality Tools}{Sonar, Scalastyle, scct, Jenkins}
+\cvitem{Databases}{Oracle 11g, HSQLDB 2.0, H2}
+\cvitem{Source Control}{SVN, Git}
+\cvitem{Other}{Dropwizard Metrics, Ant, Ivy, sbt, maven, Docker, Grafana, Splunk, \mbox{RabbitMQ}, Swagger}
 %\cvitem{Operating Systems}{Linux, Windows, Mac OS X}
 %\cvitem{Application Servers}{JBoss, Tomcat, IIS}
 %\cvitem{IDEs}{IntelliJ, Visual Studio, Eclipse}
@@ -54,16 +54,19 @@
   \item Worked with product owners to write executable acceptance tests that caught numerous bugs during project development and subsequent maintenance.
   \item Collaborated with product owners to figure out project priorities.
   \item Trained new team members on platform and team processes.
+  \item Coordinated biweekly Lunch and Learns for continuous education.
   \item Deployed and monitored software in production.
-  \item Developed separate accounting service to make business logic more traceable.
-  \item Created scalable services to sync email from Exchange 2007/2010 and IMAP servers. The new services made syncing errors easier to diagnose.
-  \item Integrated Fitnesse with build process. Promoted writing integration tests and assisted team members in test writing.
+  \item Integrated Dropwizard Metrics support to help monitor production. Trained others in how to add more metrics and view them in Grafana.
+  \item Developed separate accounting service to make business logic more traceable. New service is an order of magnitude faster while using less resources.
+  %\item Created scalable services to sync email from Exchange 2007/2010 and IMAP servers. The new services made syncing errors easier to diagnose.
+  \item Documented API endpoints for our clients to use via Swagger and Swagger UI.
+  \item Integrated FitNesse with build process. Promoted writing integration tests and assisted team members in test writing.
   \item Integrated js-test-driver with build process. This allowed us to test our JavaScript business logic separately from the web portion.
-  \item Added new functionality and fixed bugs in page-object, an external Ruby gem that provides a  DSL for browser testing. page-object helped us write more maintainable and readable tests.
-  \item Wrote and helped others write RSpec tests using Selenium WebDriver and page-object.
-  \item Modified RSpec test runner to record videos of browser tests. This made diagnosing test failures easier.
+  \item Added new functionality and fixed bugs in page-object, an external Ruby gem that provides a DSL for browser testing. page-object helped us write more maintainable and readable tests.
+  %\item Wrote and helped others write RSpec tests using Selenium WebDriver and page-object.
+  \item Modified RSpec Selenium WebDriver test runner to record videos of browser tests. This made diagnosing test failures easier.
   %\item Setup and maintained local Sonar installation for static analysis of codebase.
-  \item Setup Vagrant recipe for development environment. This cut new developer setup time in half.
+  %\item Setup Vagrant recipe for development environment. This cut new developer setup time in half.
 \end{itemize}
 }
 \cventry{2008-2010}{Software Developer}{AgileTek LLC}{Des Plaines, IL}{}{Custom software development firm specializing in high risk projects
@@ -91,17 +94,14 @@
 \cventry{2006--2008}{Bachelor of Science}{University of Illinois at Chicago}{}{\textit{3.66/4.00}}{Major: Computer Science}
 
 \section{Personal Projects}
-\cventry{}{sonar-intellij-plugin}{}{}{}{
-  Plugin for IntelliJ IDE that connects to a Sonar server and shows code violations. Downloaded by 3000+ developers.
-}
-\cventry{}{idea-fitnesse}{}{}{}{
-  Plugin for IntelliJ IDE that adds Fitnesse test support. Currently in development.
-}
 \cventry{}{Lending Shak}{}{}{}{
   Android app that connects to a Prosper account to show balances and notes.
 }
 \cventry{}{checkin}{}{}{}{
   Meteor app that helps team members share status updates.
+}
+\cventry{}{private-wiki}{}{}{}{
+  Scala.js app for taking notes. Currently in development.
 }
 
 %\section{Languages}
