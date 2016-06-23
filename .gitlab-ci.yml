@@ -1,0 +1,10 @@
+pages:
+  stage: deploy
+  image: schickling/latex
+  script:
+    - pdflatex resume.tex
+  artifacts:
+    paths:
+      - resume.pdf
+  only:
+    - master
