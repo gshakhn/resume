@@ -2,9 +2,10 @@ pages:
   stage: deploy
   image: schickling/latex
   script:
-    - pdflatex resume.tex
+    - mkdir public
+    - pdflatex -output-directory public resume.tex
   artifacts:
     paths:
-      - resume.pdf
+      - public
   only:
     - master
