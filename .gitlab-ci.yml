@@ -9,3 +9,5 @@ pages:
       - public
   only:
     - master
+  after_script:
+    - curl -X POST -F token=$GSHAKHN_TOKEN -F ref=master https://gitlab.com/api/v3/projects/$GSHAKHN_PROJECT_ID/trigger/builds
