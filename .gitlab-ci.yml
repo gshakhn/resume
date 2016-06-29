@@ -1,3 +1,7 @@
+stages:
+ - deploy
+ - trigger-other-builds
+
 pages:
   stage: deploy
   image: schickling/latex
@@ -9,5 +13,8 @@ pages:
       - public
   only:
     - master
-  after_script:
+
+trigger-gshakhn-com:
+  stage: trigger-other-builds
+  script: 
     - curl -X POST -F token=$GSHAKHN_TOKEN -F ref=master https://gitlab.com/api/v3/projects/$GSHAKHN_PROJECT_ID/trigger/builds
