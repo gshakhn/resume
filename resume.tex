@@ -13,8 +13,8 @@
 %\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
-\setlength{\hintscolumnwidth}{3.075cm}           % if you want to change the width of the column with the dates
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{3.000cm}           % if you want to change the width of the column with the dates
 
 % personal data
 \firstname{George}
@@ -51,24 +51,35 @@
 \cventry{2010--Present}{Software Engineer}{Backstop Solutions Group}{Chicago, IL}{}{Software as a service platform for hedge funds and fund of funds.
 \begin{itemize}
   \item Maintained and improved main Accounting/CRM Java web platform following Scrum and Kanban methodologies.
-  \item Worked with product owners to write executable acceptance tests that caught numerous bugs during project development and subsequent maintenance.
-  \item Collaborated with product owners to figure out project priorities.
-  \item Trained new team members on platform and team processes.
-  \item Coordinated biweekly Lunch and Learns for continuous education.
-  \item Deployed and monitored software in production.
-  \item Integrated Dropwizard Metrics support to help monitor production. Trained others in how to add more metrics and view them in Grafana.
-  \item Developed separate accounting service to make business logic more traceable. New service is an order of magnitude faster while using less resources.
-  %\item Created scalable services to sync email from Exchange 2007/2010 and IMAP servers. The new services made syncing errors easier to diagnose.
-  \item Documented API endpoints for our clients to use via Swagger and Swagger UI.
-  \item Integrated FitNesse with build process. Promoted writing integration tests and assisted team members in test writing.
-  \item Integrated js-test-driver with build process. This allowed us to test our JavaScript business logic separately from the web portion.
-  \item Added new functionality and fixed bugs in page-object, an external Ruby gem that provides a DSL for browser testing. page-object helped us write more maintainable and readable tests.
-  %\item Wrote and helped others write RSpec tests using Selenium WebDriver and page-object.
-  \item Modified RSpec Selenium WebDriver test runner to record videos of browser tests. This made diagnosing test failures easier.
-  %\item Setup and maintained local Sonar installation for static analysis of codebase.
-  %\item Setup Vagrant recipe for development environment. This cut new developer setup time in half.
+  \begin{itemize}
+    \item Developed separate accounting service to make business logic more traceable. New service is an order of magnitude faster while using less resources.
+    %\item Worked with product owners to write executable acceptance tests that caught numerous bugs during project development and subsequent maintenance.
+    %\item Created scalable services to sync email from Exchange 2007/2010 and IMAP servers. The new services made syncing errors easier to diagnose.
+    %\item Collaborated with product owners to figure out project priorities.
+    \item Documented API endpoints for our clients to use via Swagger and Swagger UI.
+    \item Trained new team members on platform and team processes.
+    \item Coordinated biweekly Lunch and Learns for continuous education.
+    \item Setup Vagrant recipe for development environment. This cut new developer setup time in half.
+  \end{itemize}
+  \item DevOps
+  \begin{itemize}
+    \item Deployed and monitored software in production.
+    \item On call support for production servers.
+    \item Integrated Dropwizard Metrics support to help monitor production. Trained others in how to add more metrics and view them in Grafana.
+    %\item Puppet
+  \end{itemize}
+  \item Improved testing infrastructure to ease development.
+  \begin{itemize}
+    \item Integrated FitNesse with build process. Promoted writing integration tests and assisted team members in test writing.
+    %\item Integrated Nailgun with integration test process. Sped up local integration test execution by an order of magnitude.
+    \item Integrated js-test-driver with build process. This allowed us to test our JavaScript business logic separately from the web portion.
+    \item Added new functionality and fixed bugs in page-object, a Ruby gem that provides a DSL for browser testing. page-object helped us write more readable tests.
+    \item Wrote and helped others write RSpec tests using Selenium WebDriver and page-object.
+    \item Modified RSpec Selenium WebDriver test runner to record videos of browser tests. This made diagnosing test failures easier.
+  \end{itemize}
 \end{itemize}
 }
+
 \cventry{2008-2010}{Software Developer}{AgileTek LLC}{Des Plaines, IL}{}{Custom software development firm specializing in high risk projects
 \begin{itemize}
   \item Planned and estimated tasks, following an Agile methodology
@@ -104,6 +115,10 @@
 \cventry{}{private-wiki}{}{}{}{
   Scala.js app for taking notes. Currently in development.
 }
+\cventry{}{poke-analyzer}{}{}{}{
+  Screenshot analyzer for Pokemon Go. Currently in development.
+}
+
 
 %\section{Languages}
 %\cvitem{English}{Fluent}
